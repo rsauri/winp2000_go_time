@@ -80,7 +80,7 @@ Docker Compose will create the `timedb` database and a table named `time_log` wh
 Run the following command to build and run the Go app and MySQL container using Docker Compose:
 
 ```bash
-docker-compose up --build
+docker compose -f docker-compose.yml up -d
 ```
 
 This will:
