@@ -160,11 +160,25 @@ To run the application:
 
 1. **Clone the repository.**
 2. **Build and run the Docker containers** using `docker-compose up --build`.
-3. **Access the API** via `http://localhost:80`.
+3. **Access the API Endpoints**
+    - `http://localhost/current-time`
+    - `http://localhost/show-time`
 
-### Troubleshooting
+### Test Results
+1. **Run the docker containers and verify they are running**
 
-- If you get an error like `Error loading time zone: unknown time zone America/Toronto`, ensure that the `tzdata` package is installed in your Docker container. You can add it to your Dockerfile as shown in the example.
+```bash
+docker compose -f docker-compose.yml up -d
+```
+![Diagram](screenshots/docker.png "Docker")
 
-- If you encounter database connection issues, check the `.env` file for correct values and ensure the `mysql` service is running.
+2. **Test the `http://localhost/current-time`**
+<div style="text-align: left;">
+<img src="screenshots/current_time.png" alt="Current Time" title="Current Time" width="500"/>
+</div>
+
+3. **Test the `http://localhost/show-time`**
+<div style="text-align: left;">
+<img src="screenshots/show_time.png" alt="Show Time" title="Show Time" width="500"/>
+</div>
 
