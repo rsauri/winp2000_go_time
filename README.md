@@ -2,7 +2,7 @@
 
 This project implements a Go API that provides the current time in Toronto, and logs each request to a MySQL database. The project is Dockerized, and uses Docker Compose for easy deployment.
 
-> If you think no one cares, I do. Thank you and I appreciate you and everything you do ❤️❤️❤️
+> *If you think no one cares, I do. Thank you and I appreciate you and everything you do ❤️❤️❤️*
 
 
 ## Table of Contents
